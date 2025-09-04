@@ -17,6 +17,7 @@ public class RoleController {
 	@PreAuthorize("hasRole('ADMIN')")
 	@GetMapping("/adminrole")
     public ResponseEntity<Object> adminRole(@RequestParam String name) { 
+		//testing dev from repo to local
     	return ResponseEntity.status(HttpStatus.OK).body(name+" Admin Role Enter.");
     } 
 	
